@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>luongdinh.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js\libs\jquery\jquery-2.1.4.js" type="text/javascript"></script>
+        <script src="js\libs\backbone.js\underscore.js" type="text/javascript"></script>
+        <script src="js\libs\backbone.js\backbone.js" type="text/javascript"></script>
+        <script src="js\main.js" type="text/javascript"></script>
+        <script src="js\transition.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet"/>
+        
+    </head>
+    <body>
+        <header class="toggleable" data-role="*,content1,content2"><h2>This is screen transition demo</h2></header>
+        <article class="content1 toggleable" data-role="*,content1"><h1>I'm content 1</h1>
+            <p>Show up dialog</p>
+            <button class="showDialog"> Show dialog</button>
+            <button class="showContent2"> Show content2 ⊳ </button>
+        </article>
+        <article class="content2 toggleable" data-role="content2"><h1>I'm content 2</h1>
+            <p>Show up dialog</p>
+            <button class="showDialog"> Show dialog</button>
+            <button class="back"> back </button>
+        </article>
+        <article class="dialog toggleable" data-role="dialog">
+            <p><h1>I'm dialog box</h1></p>
+            <button class="back"> back </button>
+        </article>
+        </article>
+        <footer class="toggleable" data-role="*,content1,content2">footer</footer>
+    </body>
+</html>
